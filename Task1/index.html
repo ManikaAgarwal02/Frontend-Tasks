@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
     <style>
-        body{
-            background-color:beige;
-        }
-        .btn{
-            background-color: black;
-            background: whitesmoke;
-            border-radius: 5px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: 500;
-
-        }
-        #input{
-            background-color: rgb(248, 250, 191);
-        }
-        .heading{
-            text-decoration:underline;
-        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(193, 241, 246);
+      }
+      .main {
+        margin: 50px;
+        width: 400px;
+        height: 200px;
+        background-color: rgb(213, 247, 228);
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px black;
+      }
+      .btn {
+        background-color: black;
+        background: whitesmoke;
+        border-radius: 5px;
+        font-family:cursive;
+        font-weight: 500;
+      }
+      .heading {
+        font-family:cursive;
+        text-align: center;
+        text-decoration:double;
+      }
+      .inside{
+        margin:20px;
+      }
+      #input{
+        border-radius: 5px;
         
+      }
     </style>
-</head>
-<body>
-    <h2 class="heading">To-Do List</h2>
-    <input type="text" id="input" placeholder="Enter Tasks......">
-    <button onclick="addTask()" class="btn">ADD TASKS</button>
+  </head>
+  <body>
+    <div class="main">
+      <div class="heading">
+        <h2>To-Do List</h2>
+      </div>
+      <div class="inside">
+        <input type="text" id="input" placeholder="Enter Tasks......" />
+        <button onclick="addTask()" class="btn">ADD TASKS</button>
+      </div>
+    </div>
 
     <ul id="taskList"></ul>
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>
